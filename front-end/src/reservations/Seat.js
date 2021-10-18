@@ -24,17 +24,11 @@ export default function Seat() {
 
     async function loadData() {
       try {
-        console.log(reservation_id);
         const reservationResponse = await readReservation(
           reservation_id,
           abortController.signal
         );
-        console.log(reservationResponse);
         const tablesResponse = await listTables(abortController.signal);
-        console.log(tablesResponse);
-        // const freeTables = tablesResponse.filter((table) => {
-        //   return !table.reservation_id;
-        // });
         setReservation(reservationResponse);
         setTables(tablesResponse);
       } catch (error) {

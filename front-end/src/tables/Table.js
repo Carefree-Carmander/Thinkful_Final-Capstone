@@ -38,7 +38,7 @@ export default function Table({ table, table_name, capacity, status }) {
       <div className="card-body">
         <p>Capacity: {capacity}</p>
         <p data-table-id-status={table.table_id}>Status: {status}</p>
-        {status === "Free" ? null : (
+        {status === "free" ? null : (
           <button
             data-table-id-finish={table.table_id}
             className="btn btn-dark"
