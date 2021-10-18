@@ -49,7 +49,8 @@
   "author": "Thinkful, Inc.",
   "license": "UNLICENSED",
   "dependencies": {
+    "cross-env": "^7.0.3",
     "knex": "^0.95.11",
-    "npx": "^10.2.2"
+    "npx": "^3.0.0"
   }
 }
